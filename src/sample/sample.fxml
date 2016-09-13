@@ -19,6 +19,10 @@
         GridPane.columnIndex="0"
         GridPane.rowIndex="0"
         text="Button has been clicked 0 times."/>
+    <Text
+        fx:id="user"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="1"/>
     <Button
         GridPane.columnIndex="1"
         GridPane.rowIndex="0"
@@ -29,7 +33,7 @@
     <ImageView
             fx:id="yay"
             GridPane.columnIndex="0"
-            GridPane.rowIndex="1"
+            GridPane.rowIndex="2"
             fitHeight="150.0"
             fitWidth="200.0"
             pickOnBounds="true"

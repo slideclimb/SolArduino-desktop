@@ -8,7 +8,10 @@ import javafx.scene.text.Text;
 
 public class Controller {
 
+    String username = System.getProperty("user.name");
+
     @FXML private Text text;
+    @FXML private Text user;
     @FXML private ImageView yay;
 
     int count = 0;
@@ -21,5 +24,12 @@ public class Controller {
             yay.setVisible(false);
         }
         text.setText("Button has been clicked " + count + " times.");
+        if(username.equals("s156767")){
+            user.setText("Hello Thomas!");
+        } else if(username.equals("s152337")) {
+            user.setText("Hello Abby!");
+        } else {
+            user.setText("Hello");
+        }
     }
 }
