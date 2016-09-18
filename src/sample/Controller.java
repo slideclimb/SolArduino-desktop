@@ -48,6 +48,10 @@ public class Controller {
         sendHttpRequest("http://192.168.2.106/?degrees="+inputDegrees.getText());
     }
 
+    @FXML protected void buttonStop(ActionEvent event) {
+        sendHttpRequest("http://192.168.2.106/?panel=stop");
+    }
+
     private void sendHttpRequest(String url) {
         try {
             InputStream response = new URL(url).openStream();
