@@ -60,6 +60,14 @@
             onAction="#setAngle">
     </Button>
 
+    <Button
+            fx:id="buttonStop"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="3"
+            text="stop"
+            onAction="#buttonStop">
+    </Button>
+
     <ImageView
             fx:id="yay"
             GridPane.columnIndex="1"
