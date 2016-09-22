@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.control.TextField?>
-<GridPane fx:controller="sample.Controller"
+<GridPane fx:controller="SolArduino.Controller"
           xmlns:fx="http://javafx.com/fxml"
           alignment="center"
           hgap="10"
@@ -19,13 +19,15 @@
             GridPane.columnIndex="0"
             GridPane.rowIndex="0"
             text="up"
-            onAction="#buttonUp">
+            onMousePressed="#buttonUp"
+            onMouseReleased="#buttonUp">
     </Button>
     <Button
             GridPane.columnIndex="0"
             GridPane.rowIndex="1"
             text="down"
-            onAction="#buttonDown">
+            onMousePressed="#buttonDown"
+            onMouseReleased="#buttonDown">
     </Button>
     <Button
             GridPane.columnIndex="0"
@@ -69,9 +71,7 @@
             pickOnBounds="true"
             preserveRatio="true"
             visible="false">
-        <image>
-            <Image url="https://c2.staticflickr.com/8/7127/7552248154_978bcb1773.jpg" />
-        </image>
+        <Image url="https://c2.staticflickr.com/8/7127/7552248154_978bcb1773.jpg"/>
     </ImageView>
 
 </GridPane>
