@@ -2,18 +2,21 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
+import java.util.ResourceBundle;
 import java.util.Scanner;
 
 import static com.sun.corba.se.impl.util.Utility.printStackTrace;
@@ -26,6 +29,7 @@ public class Controller {
     @FXML private ImageView yay;
     @FXML private Button buttonUpdate;
     @FXML private TextField inputDegrees;
+    @FXML private ImageView buttonDownImage;
 
     @FXML protected void buttonUp(ActionEvent event) {
         sendHttpRequest("http://192.168.2.106/?panel=up");
@@ -41,7 +45,6 @@ public class Controller {
 
     @FXML protected void buttonUpdate(ActionEvent event) {
         sendHttpRequest("http://192.168.2.106/?update");
-        System.out.println(event);
     }
 
     @FXML protected void setAngle(ActionEvent event) {
