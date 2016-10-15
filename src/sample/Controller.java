@@ -1,5 +1,6 @@
 package sample;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -56,15 +57,16 @@ public class Controller {
     }
 
     private void sendHttpRequest(String url) {
-        try {
-            InputStream response = new URL(url).openStream();
-            try (Scanner scanner = new Scanner(response)) {
-                String responseBody = scanner.useDelimiter("\\A").next();
-                text.setText(responseBody);
-            }
-        } catch (IOException e) {
-            printStackTrace();
-        }
+        System.out.println(url);
+//        try {
+//            InputStream response = new URL(url).openStream();
+//            try (Scanner scanner = new Scanner(response)) {
+//                String responseBody = scanner.useDelimiter("\\A").next();
+//                text.setText(responseBody);
+//            }
+//        } catch (IOException e) {
+//            printStackTrace();
+//        }
 
     }
 }
