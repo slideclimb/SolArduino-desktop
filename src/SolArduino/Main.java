@@ -1,4 +1,4 @@
-package sample;
+package SolArduino;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("interface.fxml"));
         primaryStage.setTitle("SolArduino");
         Scene scene = new Scene(root, 500, 300);
         File file = new File("src/sample/resources/stylesheet.css");

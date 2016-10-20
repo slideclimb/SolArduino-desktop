@@ -8,7 +8,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleButton?>
-<GridPane fx:controller="sample.Controller"
+<GridPane fx:controller="SolArduino.Controller"
           xmlns:fx="http://javafx.com/fxml"
           alignment="center"
           hgap="10"
@@ -20,7 +20,8 @@
             fx:id="buttonUp"
             GridPane.columnIndex="0"
             GridPane.rowIndex="0"
-            onAction="#buttonUp">
+            onMousePressed="#buttonUp"
+            onMouseReleased="#buttonUp">
         <graphic>
             <ImageView id="buttonUpGraphic" fitWidth="25.0" fitHeight="25.0" pickOnBounds="true" preserveRatio="true">
             </ImageView>
@@ -30,7 +31,8 @@
             fx:id="buttonDown"
             GridPane.columnIndex="0"
             GridPane.rowIndex="1"
-            onAction="#buttonDown">
+            onMousePressed="#buttonDown"
+            onMouseReleased="#buttonDown">
         <graphic>
             <ImageView fx:id="buttonDownImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                 <!--<image>-->
@@ -90,9 +92,7 @@
             pickOnBounds="true"
             preserveRatio="true"
             visible="false">
-        <image>
-            <Image url="https://c2.staticflickr.com/8/7127/7552248154_978bcb1773.jpg" />
-        </image>
+        <Image url="https://c2.staticflickr.com/8/7127/7552248154_978bcb1773.jpg"/>
     </ImageView>
 
 </GridPane>
