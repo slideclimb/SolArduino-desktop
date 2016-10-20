@@ -32,27 +32,27 @@ public class Controller {
     @FXML private ImageView buttonDownImage;
 
     @FXML protected void buttonUp(ActionEvent event) {
-        sendHttpRequest("http://192.168.2.106/?panel=up");
+        sendHttpRequest("http://192.168.178.106/?panel=up");
     }
 
     @FXML protected void buttonDown(ActionEvent event) {
-        sendHttpRequest("http://192.168.2.106/?panel=down");
+        sendHttpRequest("http://192.168.178.106/?panel=down");
     }
 
     @FXML protected void buttonAuto(ActionEvent event) {
-        sendHttpRequest("http://192.168.2.106/?panel=auto");
+        sendHttpRequest("http://192.168.178.106/?panel=auto");
     }
 
     @FXML protected void buttonUpdate(ActionEvent event) {
-        sendHttpRequest("http://192.168.2.106/?update");
+        sendHttpRequest("http://192.168.178.106/?update");
     }
 
     @FXML protected void setAngle(ActionEvent event) {
-        sendHttpRequest("http://192.168.2.106/?degrees="+inputDegrees.getText());
+        sendHttpRequest("http://192.168.178.106/?degrees="+inputDegrees.getText());
     }
 
     @FXML protected void buttonStop(ActionEvent event) {
-        sendHttpRequest("http://192.168.2.106/?panel=stop");
+        sendHttpRequest("http://192.168.178.106/?panel=stop");
     }
 
     private void sendHttpRequest(String url) {
