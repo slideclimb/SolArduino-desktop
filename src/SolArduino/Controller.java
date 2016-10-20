@@ -59,15 +59,15 @@ public class Controller {
 
     private void sendHttpRequest(String url) {
         System.out.println("sending request to"+url);
-        try {
-            InputStream response = new URL(url).openStream();
-            try (Scanner scanner = new Scanner(response)) {
-                String responseBody = scanner.useDelimiter("\\A").next();
-                text.setText(responseBody);
-            }
-        } catch (IOException e) {
-            printStackTrace();
-        }
+//        try {
+//            InputStream response = new URL(url).openStream();
+//            try (Scanner scanner = new Scanner(response)) {
+//                String responseBody = scanner.useDelimiter("\\A").next();
+//                text.setText(responseBody);
+//            }
+//        } catch (IOException e) {
+//            printStackTrace();
+//        }
 
     }
 }
